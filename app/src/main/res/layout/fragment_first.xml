@@ -21,36 +21,46 @@
     <!--        app:layout_constraintTop_toBottomOf="@id/textview_first"-->
     <!--        app:layout_constraintVertical_bias="0.11" />-->
 
-    <Button
-        android:id="@+id/button_first"
-        android:layout_width="409dp"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="224dp"
-        android:text="Activities"
+        android:layout_marginBottom="512dp"
+        android:text="Course"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.002"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button_second"
         android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="376dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="404dp"
         android:text="Valid Course"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="409dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="304dp"
+        android:text="Activities"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button_third"
         android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="300dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="100dp"
         android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
     <!--        app:layout_constraintTop_toBottomOf="@id/textview_first"-->
     <!--        app:layout_constraintVertical_bias="0.324" />-->
