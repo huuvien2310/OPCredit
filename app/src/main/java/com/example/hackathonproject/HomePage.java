@@ -4,14 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 import android.os.Bundle;
-import android.os.Bundle;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class HomePage extends AppCompatActivity implements AdapterView.OnItemClickListener {
-
+public class HomePage extends AppCompatActivity implements AdapterView.OnItemClickListener{
     ListView listView;
     String[] array = {"Art",
             "Business Ad",
@@ -33,9 +31,9 @@ public class HomePage extends AppCompatActivity implements AdapterView.OnItemCli
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.homepage_activity);
+        setContentView(R.layout.assignmentlist_activity);
 
-        listView = findViewById(R.id.course);
+//        listView = findViewById(R.id.course);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(HomePage.this, android.R.layout.simple_list_item_1, array);
         listView.setAdapter(arrayAdapter);
         listView.setOnItemClickListener(this);

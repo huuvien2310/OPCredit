@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     else {
                         Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
                         /* Allow the user into the app by going into the next activity */
-                        Intent intent = new Intent(MainActivity.this, HomePage.class);
+                        Intent intent = new Intent(MainActivity.this, AssignmentList.class);
                         startActivity(intent);
                     }
                 }
