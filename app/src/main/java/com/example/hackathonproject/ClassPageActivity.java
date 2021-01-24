@@ -42,6 +42,8 @@ public class ClassPageActivity extends AppCompatActivity implements AssignmentLi
     // This is what the adapter calls
     @Override
     public void onItemClick(View view, int position) {
-        Toast.makeText(this, "You clicked " + adapter.getItem(position) + " on row number " + (position + 1), Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, UploadWork.class);
+        intent.putExtra("class_name", adapter.getItem(position));
+        startActivity(intent);
     }
 }
