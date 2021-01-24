@@ -24,12 +24,11 @@ public class AssignmentList extends AppCompatActivity implements ClassListViewAd
         // data to populate the RecyclerView with
         ArrayList<String> classNames = new ArrayList<>();
         classNames.add("Art");
-        classNames.add("Business Ad");
+        classNames.add("Business");
         classNames.add("Biology");
         classNames.add("Communications");
         classNames.add("Criminal Justice");
         classNames.add("Computer Science");
-        classNames.add("School Leadership");
         classNames.add("Economics");
         classNames.add("Education");
         classNames.add("Psychology");
@@ -37,7 +36,6 @@ public class AssignmentList extends AppCompatActivity implements ClassListViewAd
         classNames.add("Health Education");
         classNames.add("History");
         classNames.add("Journalism");
-        classNames.add("Occupational Therapy");
         classNames.add("Theatre");
 
         // set up the RecyclerView
@@ -57,52 +55,46 @@ public class AssignmentList extends AppCompatActivity implements ClassListViewAd
         intent.putExtra("class_name", adapter.getItem(position));
 
         if(adapter.getItem(position).equals("Art")) {
-            intent.putExtra("assignments", new String[]{"Create a Hello World App", "Simulate the solar system with computer graphicscd "});
+            intent.putExtra("assignments", new String[]{"Draw an egg"});
         }
-        else if(adapter.getItem(position).equals("Business Ad")){
-            intent.putExtra("assignments", new String[]{"Write an Essay on quarks"});
+        else if(adapter.getItem(position).equals("Business")){
+            intent.putExtra("assignments", new String[]{"What is Entrepreneurship"});
         }
         else if(adapter.getItem(position).equals("Biology")){
-            intent.putExtra("assignments", new String[]{"Write an Essay on quarks"});
+            intent.putExtra("assignments", new String[]{"Summary the article \"Sex Limited Inheritance in Drosophila\", by Thomas Hunt Morgan"});
         }
         else if(adapter.getItem(position).equals("Communications")){
-            intent.putExtra("assignments", new String[]{"Write an Essay on quarks"});
+            intent.putExtra("assignments", new String[]{"Explain why some games offered free-to-play, or freemium"});
         }
         else if(adapter.getItem(position).equals("Criminal Justice")){
-            intent.putExtra("assignments", new String[]{"Write an Essay on quarks"});
+            intent.putExtra("assignments", new String[]{"Describe the U.S. criminal justice system"});
         }
         else if(adapter.getItem(position).equals("Computer Science")) {
-            intent.putExtra("assignments", new String[]{"Write an Essay on quarks"});
-        }
-        else if(adapter.getItem(position).equals("School Leadership")){
-            intent.putExtra("assignments", new String[]{"Write an Essay on quarks"});
+            intent.putExtra("assignments", new String[]{"Create a Hello World App", "Simulate the solar system with computer graphics"});
         }
         else if(adapter.getItem(position).equals("Economics")){
-            intent.putExtra("assignments", new String[]{"Write an Essay on quarks"});
+            intent.putExtra("assignments", new String[]{"Explain the Auction Theory"});
         }
         else if(adapter.getItem(position).equals("Education")){
-            intent.putExtra("assignments", new String[]{"Write an Essay on quarks"});
+            intent.putExtra("assignments", new String[]{"Your Opinion about The Role of The Teacher"});
         }
         else if(adapter.getItem(position).equals("Psychology")){
-            intent.putExtra("assignments", new String[]{"Write an Essay on quarks"});
+            intent.putExtra("assignments", new String[]{"How Do Emotions Work?"});
         }
         else if (adapter.getItem(position).equals("French")) {
-            intent.putExtra("assignments", new String[]{"Introduce yourself in Esperanto"});
+            intent.putExtra("assignments", new String[]{"Translate A Random French Poem"});
         }
         else if(adapter.getItem(position).equals("Health Education")){
-            intent.putExtra("assignments", new String[]{"Write an Essay on quarks"});
+            intent.putExtra("assignments", new String[]{"Explain the Nutrition Pyramid"});
         }
         else if(adapter.getItem(position).equals("History")){
-            intent.putExtra("assignments", new String[]{"Write an Essay on quarks"});
+            intent.putExtra("assignments", new String[]{"Explain why Americans were alcoholics in the 1800s"});
         }
         else if(adapter.getItem(position).equals("Journalism")){
-            intent.putExtra("assignments", new String[]{"Write an Essay on quarks"});
-        }
-        else if(adapter.getItem(position).equals("Occupational Therapy")){
-            intent.putExtra("assignments", new String[]{"Write an Essay on quarks"});
+            intent.putExtra("assignments", new String[]{"How to avoid Fake News"});
         }
         else if(adapter.getItem(position).equals("Theatre")){
-            intent.putExtra("assignments", new String[]{"Write an Essay on quarks"});
+            intent.putExtra("assignments", new String[]{"Your Opinion about the ending of \"La La Land\""});
         }
         startActivity(intent);
     }
